@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sacred Janoi Sanskar Invitation</title>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;600&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/howler@2.2.3/dist/howler.min.js"></script>
+    <style>
+        :root {
+            --primary: #D2B48C;
+            --secondary: #FFA500;
+            --text: #4A3728;
+        }
+        
+        body {
+            background-color: var(--primary);
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23997a57' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E");
+        }
+
+        .sacred-text {
+            font-family: 'Tangerine', cursive;
+        }
+
+        .content-text {
+            font-family: 'Spectral', serif;
+        }
+
+        .card {
+            transition: all 0.3s ease;
+            transform-style: preserve-3d;
+        }
+
+        .om-symbol {
+            animation: rotate 20s linear infinite;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .floating {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .sacred-border {
+            background: linear-gradient(45deg, var(--secondary), transparent);
+            border: 2px solid var(--secondary);
+        }
+    </style>
+</head>
+<body class="min-h-screen text-[var(--text)]">
+    <div id="soundControl" class="fixed top-4 right-4 z-50 cursor-pointer">
+        <i class="bi bi-volume-up text-2xl"></i>
+    </div>
+
+    <main class="container mx-auto px-4 py-8">
+        <!-- Hero Section -->
+        <section class="text-center mb-16" data-aos="fade-down">
+            <img src="https://api.dicebear.com/6.x/initials/svg?seed=OM&backgroundColor=orange" alt="Om Symbol" class="om-symbol w-20 h-20 mx-auto mb-8">
+            <h1 class="sacred-text text-6xl md:text-8xl mb-4">Sacred Janoi Sanskar</h1>
+            <p class="content-text text-xl md:text-2xl">You're Invited to this Divine Ceremony</p>
+        </section>
+
+        <!-- Names Section -->
+        <section class="sacred-border rounded-lg p-8 mb-16" data-aos="fade-up">
+            <div class="text-center">
+                <h2 class="sacred-text text-4xl md:text-5xl mb-6">The Sacred Thread Ceremony of</h2>
+                <div class="space-y-4">
+                    <p class="content-text text-3xl">Yagna Amit Oza</p>
+                    <p class="content-text text-3xl">Om Asit Oza</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Details Section -->
+        <section class="grid md:grid-cols-2 gap-8 mb-16">
+            <div class="sacred-border rounded-lg p-8" data-aos="fade-right">
+                <h3 class="sacred-text text-3xl mb-4">When & Where</h3>
+                <div class="content-text space-y-4">
+                    <p><i class="bi bi-calendar3"></i> 29th May 2025</p>
+                    <p><i class="bi bi-clock"></i> From 2 PM onwards</p>
+                    <p><i class="bi bi-geo-alt"></i> Agrasen Foundation</p>
+                </div>
+            </div>
+            <div class="sacred-border rounded-lg p-8" data-aos="fade-left">
+                <h3 class="sacred-text text-3xl mb-4">Schedule</h3>
+                <div class="content-text space-y-4">
+                    <p>Arrival & Welcome</p>
+                    <p>Vedic Chanting</p>
+                    <p>Yajnopavita Ceremony</p>
+                    <p>Bhojan (Traditional Feast)</p>
+                    <p>Blessing & Gift Giving</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- RSVP Section -->
+        <section class="sacred-border rounded-lg p-8 mb-16" data-aos="fade-up">
+            <h3 class="sacred-text text-4xl text-center mb-8">RSVP & Contact</h3>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="space-y-4">
+                    <h4 class="content-text text-2xl mb-4">WhatsApp Us</h4>
+                    <div class="space-y-2">
+                        <a href="https://wa.me/919879791327" class="flex items-center gap-2 hover:text-[var(--secondary)]">
+                            <i class="bi bi-whatsapp"></i> +91 9879791327
+                        </a>
+                        <a href="https://wa.me/919879591327" class="flex items-center gap-2 hover:text-[var(--secondary)]">
+                            <i class="bi bi-whatsapp"></i> +91 9879591327
+                        </a>
+                        <a href="https://wa.me/919826430000" class="flex items-center gap-2 hover:text-[var(--secondary)]">
+                            <i class="bi bi-whatsapp"></i> +91 9826430000
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="content-text text-2xl mb-4">Location</h4>
+                    <a href="https://maps.app.goo.gl/nK695exvB4dAG4Dk6" 
+                       class="flex items-center gap-2 hover:text-[var(--secondary)]" 
+                       target="_blank">
+                        <i class="bi bi-geo-alt"></i> Agrasen Foundation, Agrasen Road, near Club O7, Shela, Gujarat 380058
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Background Music
+        const sound = new Howl({
+            src: ['https://cdn.pixabay.com/download/audio/2022/02/22/audio_d1ed899011.mp3'],
+            loop: true,
+            volume: 0.3
+        });
+
+        const soundControl = document.getElementById('soundControl');
+        let isPlaying = false;
+
+        soundControl.addEventListener('click', () => {
+            if (isPlaying) {
+                sound.pause();
+                soundControl.innerHTML = '<i class="bi bi-volume-mute text-2xl"></i>';
+            } else {
+                sound.play();
+                soundControl.innerHTML = '<i class="bi bi-volume-up text-2xl"></i>';
+            }
+            isPlaying = !isPlaying;
+        });
+
+        // Add confetti effect on load
+        window.addEventListener('load', () => {
+            party.confetti(document.body, {
+                count: party.variation.range(20, 40)
+            });
+        });
+
+        // Initialize Tilt effect
+        VanillaTilt.init(document.querySelectorAll(".sacred-border"), {
+            max: 3,
+            speed: 400,
+            glare: true,
+            "max-glare": 0.2
+        });
+    </script>
+<script>document.body.addEventListener('wheel', e => { if (!e.ctrlKey) return; e.preventDefault(); return }, { passive: false })</script>
+	</body>
+</html>
